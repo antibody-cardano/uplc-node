@@ -17,8 +17,6 @@ jobs:
       matrix:
         toolchain:
           - stable
-          - beta
-          - nightly
     steps:
       - uses: jetli/wasm-pack-action@v0.4.0
         with:
