@@ -876,8 +876,7 @@ checksum = "e51733f11c9c4f72aa0c160008246859e340b00807569a0da0e7a1079b27ba85"
 [[package]]
 name = "uplc"
 version = "1.0.21-alpha"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3bc5fa276e39f2442af260de0840957f4740da9264f994fa98b4426d1c8ecb7"
+source = "git+https://github.com/aiken-lang/aiken.git#30a6b77116950e8b15381dc78be3b31eec695a41"
 dependencies = [
  "anyhow",
  "blst",

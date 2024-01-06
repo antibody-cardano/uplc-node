@@ -10,7 +10,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 error = "0.1.9"
-uplc = "1.0.21-alpha"
+uplc = { git = "https://github.com/aiken-lang/aiken.git"}
 wasm-bindgen = "0.2.89"
 k256 = { version = "0.13.0" }
 js-sys = "0.3.61"
