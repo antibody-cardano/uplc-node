@@ -897,8 +897,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "uplc-wrapper"
-version = "0.0.1"
+name = "uplc-wasm"
+version = "0.1.0"
 dependencies = [
  "getrandom",
  "js-sys",
