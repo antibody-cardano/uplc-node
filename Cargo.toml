@@ -21,3 +21,6 @@ codegen-units = 1
 opt-level = "z"
 lto = true
 debug = false
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ['-Oz']
