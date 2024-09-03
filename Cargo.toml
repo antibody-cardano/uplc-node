@@ -9,10 +9,8 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-error = "0.1.9"
-uplc = { git = "https://github.com/aiken-lang/aiken.git"}
+uplc = { git = "https://github.com/aiken-lang/aiken.git" }
 wasm-bindgen = "0.2.89"
-k256 = { version = "0.13.0" }
 js-sys = "0.3.61"
 getrandom = { version = "0.2", features = ["js"] }
 wee_alloc = "0.4.5"
