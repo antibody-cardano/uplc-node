@@ -1,19 +1,22 @@
 [package]
-name = "uplc-wrapper"
-version = "0.0.1"
+name = "uplc-wasm"
+version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "A WebAssembly (wasm) wrapper for the uplc crate"
+repository = "https://github.com/mpizenberg/uplc-wasm"
+license = "Apache-2.0"
+keywords = ["cardano", "wasm", "uplc"]
+categories = ["algorithms"]
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-error = "0.1.9"
-uplc = { git = "https://github.com/aiken-lang/aiken.git"}
-wasm-bindgen = "0.2.89"
-k256 = { version = "0.13.0" }
-js-sys = "0.3.61"
+uplc = { git = "https://github.com/aiken-lang/aiken.git" }
+wasm-bindgen = "0.2.93"
+js-sys = "0.3.70"
+wee_alloc = "0.4.5"
+# required for wasm usage of getrandom
 getrandom = { version = "0.2", features = ["js"] }
 
 [profile.release]
@@ -21,3 +24,6 @@ codegen-units = 1
 opt-level = "z"
 lto = true
 debug = false
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ['-Oz']
