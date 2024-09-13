@@ -26,7 +26,7 @@ pub fn eval_phase_two_raw(
     return tx::eval_phase_two_raw(
         tx_bytes,
         &utxos_bytes,
-        cost_mdls_bytes,
+        Some(cost_mdls_bytes),
         (cpu_budget, mem_budget),
         (
             slot_config_zero_time,
